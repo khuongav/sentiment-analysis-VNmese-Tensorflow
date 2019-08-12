@@ -18,7 +18,9 @@ class WordCharRNN(object):
     For Char RNN, we must gather different number of outputs of various records
     by using gather_nd, split the results by number of word of each records 
     (the number of splits is fixed due to the static graph), and then padded to
-    the full word length
+    the full word length.
+
+    images/ dir helps to illustrate the transfer and the combination of word embeddings with character embeddings.
     """
 
     def __init__(self, word_sequence_length, char_sequence_length, loss_weight, 
