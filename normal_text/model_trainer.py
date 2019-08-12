@@ -8,9 +8,9 @@ import datetime
 import h5py
 import numpy as np
 import tensorflow as tf
-import constants
-from word_embedding import load_word_embedding_model
-from layer_norm_gru import LayerNormGRU
+from common import constants
+from word_embedding.word_embedding import load_word_embedding_model
+from normal_text.layer_norm_gru import LayerNormGRU
 SEED = 1494
 
 class TextCNNRNN(object):

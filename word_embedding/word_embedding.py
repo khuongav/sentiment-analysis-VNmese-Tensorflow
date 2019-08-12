@@ -5,7 +5,7 @@ import logging
 import multiprocessing
 from gensim.models.word2vec import Word2Vec, LineSentence
 import tensorflow as tf
-import constants
+from common import constants
 
 num_cores = multiprocessing.cpu_count() - 1
 

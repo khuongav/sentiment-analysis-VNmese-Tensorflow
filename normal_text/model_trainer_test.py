@@ -6,8 +6,8 @@ import os
 import shutil
 import tempfile
 import numpy as np
-import constants
-from normal_text_model_trainer import train_model
+from common import constants
+from normal_text.model_trainer import train_model
 
 
 class ModelTrainerTest(unittest.TestCase):

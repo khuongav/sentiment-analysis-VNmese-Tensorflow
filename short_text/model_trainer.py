@@ -7,7 +7,7 @@ import datetime
 import h5py
 import numpy as np
 import tensorflow as tf
-import constants
+from common import constants
 
 class WordCharRNN(object):
     """
